@@ -4,7 +4,7 @@ window.addEventListener('load', function() {    // Initialize Telegram Web App
     Telegram.WebApp.ready();
     // Simulate loading time    setTimeout(function() {
         document.getElementById('loading-screen').style.display = 'none';        document.getElementById('main-screen').style.display = 'flex';
-    }, 3000); // Change the timeout duration to 3000 milliseconds (3 seconds)
+    }, 3000); // Set the timeout duration to 3000 milliseconds (3 seconds)
     document.getElementById('tap-gif').addEventListener('click', function() {        coinCount++;
         xpCount++;        document.getElementById('coin-counter').innerText = Coins: ${coinCount};
         document.getElementById('xp-counter').innerText = xpCount;        showCoinAnimation();
