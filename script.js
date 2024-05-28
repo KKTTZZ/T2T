@@ -57,4 +57,14 @@ function showXpAnimation() {
     const animation = document.createElement('div');
     animation.classList.add('xp-animation');
     animation.innerText = '+1 XP';
-    document.body.appendChild(animat
+    document.body.appendChild(animation);
+
+    setTimeout(() => {
+        animation.remove();
+    }, 1000);
+}
+
+function subscribeChannel() {
+    tokenBalance += 1000;
+    document.getElementById('token-balance').innerText = tokenBalance;
+}
