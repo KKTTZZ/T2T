@@ -23,7 +23,7 @@
         <div id="bottom-bar">
             <img src="4 (3).png" alt="Home" class="menu-icon" data-target="home-screen">
             <img src="5 (1).png" alt="Settings" class="menu-icon" data-target="settings-screen">
-            <img src="6 (1).png" alt="Stats" class="menu-icon" data-target="stats-screen">
+            <img src="6 (1).png" alt="Stats" class="menu-icon" data-target="main-screen">
             <img src="7.png" alt="Channels" class="menu-icon" data-target="channels-screen">
         </div>
     </div>
@@ -31,7 +31,9 @@
     <!-- Заглушки -->
     <div id="settings-screen" style="display: none;">
         <h2>Settings</h2>
-        <p>Settings content goes here...</p>
+        <p>Общее число приглашенных друзей: <span id="friends-counter">0</span></p>
+        <p>Уровень игрока: <span id="player-level">-</span></p>
+        <p>Сумма заработанных денег: <span id="earned-money">0</span></p>
         <button onclick="showScreen('main-screen')">Back to Main</button>
     </div>
     <div id="stats-screen" style="display: none;">
@@ -41,10 +43,11 @@
     </div>
     <div id="channels-screen" style="display: none;">
         <h2>Channels</h2>
+        <div>Баланс токенов YOUNG: <span id="token-balance">0</span></div>
         <ul>
-            <li>Channel 1 <button>Subscribe</button></li>
-            <li>Channel 2 <button>Subscribe</button></li>
-            <li>Channel 3 <button>Subscribe</button></li>
+            <li>Channel 1 <button onclick="subscribeChannel()">Subscribe</button></li>
+            <li>Channel 2 <button onclick="subscribeChannel()">Subscribe</button></li>
+            <li>Channel 3 <button onclick="subscribeChannel()">Subscribe</button></li>
         </ul>
         <button onclick="showScreen('main-screen')">Back to Main</button>
     </div>
