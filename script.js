@@ -1,5 +1,6 @@
 let coinCount = 0;
 let xpCount = 0;
+let tokenBalance = 0;
 
 window.addEventListener('load', function() {
     // Initialize Telegram Web App
@@ -9,7 +10,7 @@ window.addEventListener('load', function() {
     setTimeout(function() {
         document.getElementById('loading-screen').style.display = 'none';
         document.getElementById('main-screen').style.display = 'flex';
-    }, 4000); // Change the timeout duration to 4000 milliseconds (4 seconds)
+    }, 3000); // Change the timeout duration to 3000 milliseconds (3 seconds)
 
     document.getElementById('tap-gif').addEventListener('click', function() {
         coinCount++;
@@ -61,4 +62,9 @@ function showXpAnimation() {
     setTimeout(() => {
         animation.remove();
     }, 1000);
+}
+
+function subscribeChannel() {
+    tokenBalance += 1000;
+    document.getElementById('token-balance').innerText = tokenBalance;
 }
