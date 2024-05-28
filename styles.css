@@ -1,155 +1,47 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+body, html {    margin: 0;
+    padding: 0;    width: 100%;
+    height: 100%;    display: flex;
+    justify-content: center;    align-items: center;
+    background-color: #f0f0f0;    font-family: Arial, sans-serif;
 }
-
 #loading-screen {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    align-items: center;
+    height: 100%;    width: 100%;
+}
+#loading-screen img {    width: 100px;
+    height: 100px;}
+#main-screen, #home-screen, #settings-screen, #achievements-screen, #channels-screen {
+    display: flex;    flex-direction: column;
+    justify-content: center;    align-items: center;
     height: 100%;
-    width: 100%;
-}
-
-#loading-screen img {
-    width: 100px;
-    height: 100px;
-}
-
-#main-screen, #settings-screen, #stats-screen, #channels-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-}
-
+    width: 100%;    background-color: #ffffff;
+    padding: 20px;    box-sizing: border-box;
+    position: relative;}
 #tap-area {
-    position: relative;
-}
-
+    position: relative;}
 #tap-gif {
-    width: 200px;
-    height: auto;
-    cursor: pointer;
-}
-
+    width: 200px;    height: auto;
+    cursor: pointer;}
 #top-bar {
-    position: absolute;
-    top: 10px;
+    position: absolute;    top: 10px;
     right: 10px;
-    font-size: 24px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-size: 24px;    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;    border-radius: 5px;
 }
-
-#coin-counter {
-    font-weight: bold;
+#coin-counter {    font-weight: bold;
 }
-
-#xp-bar {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 24px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: green;
-}
-
+#xp-bar {    position: absolute;
+    top: 10px;    left: 10px;
+    font-size: 24px;    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;    border-radius: 5px;
+    color: green;}
 #bottom-bar {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
+    position: absolute;    bottom: 10px;
+    width: 100%;    display: flex;
+    justify-content: space-around;}
 .menu-icon {
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-}
-
+    width: 70px;    height: 70px;
+    cursor: pointer;}
 .coin-animation {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    color: gold;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    animation: coinAnimation 1s forwards;
-}
-
-@keyframes coinAnimation {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-}
-
-.xp-animation {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    color: green;
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-    animation: xpAnimation 1s forwards;
-}
-
-@keyframes xpAnimation {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-}
-
-#settings-screen, #stats-screen, #channels-screen {
-    display: none;
-}
-
-#channels-screen ul {
-    list-style: none;
-    padding: 0;
-}
-
-#channels-screen ul li {
-    margin: 10px 0;
-}
-
-#channels-screen button {
-    margin-left: 10px;
-}
-/* оставим существующие стили без изменений, так как они уже определены */
-
-#settings-screen, #stats-screen, #channels-screen {
-    display: none;
-}
-
-/* остальные стили остаются без изменений */
-
+    position: absolute;    font-size:
