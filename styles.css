@@ -145,3 +145,11 @@ body, html {
 #channels-screen button {
     margin-left: 10px;
 }
+/* оставим существующие стили без изменений, так как они уже определены */
+
+#settings-screen, #stats-screen, #channels-screen {
+    display: none;
+}
+
+/* остальные стили остаются без изменений */
+
