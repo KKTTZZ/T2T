@@ -34,17 +34,32 @@
         <p>Общее число приглашенных друзей: <span id="friends-counter">0</span></p>
         <p>Уровень игрока: <span id="player-level">-</span></p>
         <p>Сумма заработанных денег: <span id="earned-money">0</span></p>
-        <button onclick="showScreen('main-screen')">Назад на Главную</button>
-    </div>
-    <div id="stats-screen" style="display: none;">
-        <h2>Статистика</h2>
         <p>Число выигранных турниров по падл теннису: <span id="padel-tournaments">0</span></p>
         <p>Число побед в трейдинг турнирах: <span id="trading-tournaments">0</span></p>
         <p>Число подписчиков в социальных сетях: <span id="social-followers">0</span></p>
         <p>Число совершенных сделок: <span id="trades-count">0</span></p>
         <p>Самый большой PNL по сделке: <span id="biggest-pnl">0</span></p>
-        <p>Любимая монета: <span id="favorite-coin">-</span></p>
-        <p>Любимая биржа: <span id="favorite-exchange">-</span></p>
+        <p>Любимая монета: 
+            <select id="favorite-coin">
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="USDT">Tether (USDT)</option>
+                <!-- Добавьте другие монеты по мере необходимости -->
+            </select>
+        </p>
+        <p>Любимая биржа: 
+            <select id="favorite-exchange">
+                <option value="Binance">Binance</option>
+                <option value="Coinbase">Coinbase</option>
+                <option value="Kraken">Kraken</option>
+                <!-- Добавьте другие биржи по мере необходимости -->
+            </select>
+        </p>
+        <button onclick="showScreen('main-screen')">Назад на Главную</button>
+    </div>
+    <div id="stats-screen" style="display: none;">
+        <h2>Статистика</h2>
+        <p>Stats content goes here...</p>
         <button onclick="showScreen('main-screen')">Назад на Главную</button>
     </div>
     <div id="channels-screen" style="display: none;">
